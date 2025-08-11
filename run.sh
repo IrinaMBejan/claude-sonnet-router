@@ -30,7 +30,6 @@ if [ ! -f ".env" ]; then
 fi
 
 echo "✅ Basic setup complete!"
-export OPENROUTER_API_KEY=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
 
 # Spawn services using Python script
 echo "🔄 Spawning services..."
