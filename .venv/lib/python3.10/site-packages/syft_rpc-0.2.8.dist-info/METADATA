@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: syft-rpc
+Version: 0.2.8
+Summary: Add your description here
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.9.2
+Requires-Dist: syft-core>=0.2.8
+Requires-Dist: typing-extensions>=4.12.2

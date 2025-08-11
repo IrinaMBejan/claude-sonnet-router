@@ -1,0 +1,3 @@
+[console_scripts]
+accounting = syft_accounting_sdk.cli:accounting
+accounting-admin = syft_accounting_sdk.cli:accounting_admin

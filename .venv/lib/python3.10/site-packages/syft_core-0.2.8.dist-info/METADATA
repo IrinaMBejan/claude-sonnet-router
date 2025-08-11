@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: syft-core
+Version: 0.2.8
+Summary: Add your description here
+Requires-Python: >=3.9
+Requires-Dist: pydantic[email]>=2.10.4
+Requires-Dist: pyyaml>=6.0.2
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: wcmatch==10.0

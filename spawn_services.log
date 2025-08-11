@@ -1,0 +1,31 @@
+2025-08-11 08:35:24,729 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 08:35:24,730 - __main__ - INFO - Chat enabled: True
+2025-08-11 08:35:24,730 - __main__ - INFO - Search enabled: False
+2025-08-11 08:35:24,730 - __main__ - INFO - 🚀 Starting service spawning process...
+2025-08-11 08:35:24,730 - __main__ - INFO - 🔄 Spawning chat...
+2025-08-11 08:35:24,730 - __main__ - INFO - 🔧 Setting up Ollama service...
+2025-08-11 08:35:24,732 - __main__ - ERROR - ❌ Ollama setup failed: [Errno 2] No such file or directory: 'ollama'
+2025-08-11 08:35:24,733 - __main__ - ERROR - ❌ Failed to spawn chat
+2025-08-11 08:35:24,734 - __main__ - ERROR - 💥 Service spawning failed - router should not start
+2025-08-11 09:08:40,724 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 09:08:40,724 - __main__ - INFO - Chat enabled: True
+2025-08-11 09:08:40,724 - __main__ - INFO - Search enabled: False
+2025-08-11 09:08:40,724 - __main__ - INFO - 🔧 Setting up Claude service...
+2025-08-11 09:08:40,777 - __main__ - ERROR - ❌ Custom chat service setup failed: OPENROUTER_API_KEY is required but not found in environment variables
+2025-08-11 09:08:40,777 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'
+2025-08-11 09:10:55,756 - __main__ - ERROR - 💥 Service spawning error: 1 validation error for RouterEnvSettings
+openrouter_api_key
+  Extra inputs are not permitted [type=extra_forbidden, input_value='sk-or-v1-c1ca81bb838dbea...d3d3fea340e23d2968c84c1', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/extra_forbidden
+2025-08-11 09:14:50,721 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 09:14:50,721 - __main__ - INFO - Chat enabled: True
+2025-08-11 09:14:50,721 - __main__ - INFO - Search enabled: False
+2025-08-11 09:14:50,722 - __main__ - INFO - 🔧 Setting up Claude service...
+2025-08-11 09:14:50,770 - __main__ - ERROR - ❌ Custom chat service setup failed: 'CustomChatService' object has no attribute 'config'
+2025-08-11 09:14:50,771 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'
+2025-08-11 09:18:33,258 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 09:18:33,259 - __main__ - INFO - Chat enabled: True
+2025-08-11 09:18:33,259 - __main__ - INFO - Search enabled: False
+2025-08-11 09:18:33,259 - __main__ - INFO - 🔧 Setting up Claude service...
+2025-08-11 09:18:33,313 - __main__ - ERROR - ❌ Custom chat service setup failed: CustomChatService.__init__() missing 1 required positional argument: 'config'
+2025-08-11 09:18:33,314 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'

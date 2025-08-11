@@ -1,0 +1,18 @@
+{
+  "services": {
+    "chat": {
+      "status": "stopped",
+      "url": null,
+      "port": null,
+      "pid": null,
+      "started_at": null,
+      "error": null
+    }
+  },
+  "router": {
+    "status": "stopped",
+    "started_at": null,
+    "depends_on": [],
+    "url": null
+  }
+}

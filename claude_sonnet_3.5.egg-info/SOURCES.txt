@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+claude_sonnet_3.5.egg-info/PKG-INFO
+claude_sonnet_3.5.egg-info/SOURCES.txt
+claude_sonnet_3.5.egg-info/dependency_links.txt
+claude_sonnet_3.5.egg-info/requires.txt
+claude_sonnet_3.5.egg-info/top_level.txt

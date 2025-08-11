@@ -1,0 +1,127 @@
+# claude-sonnet-3.5
+
+A Syft LLM Router with default implementations for chat (Ollama) and search (Local RAG).
+
+## Features
+
+- ✅ **Chat Service**: Ollama integration for local LLM chat
+- ✅ **Search Service**: Local RAG for document retrieval
+- ✅ **FastAPI Server**: RESTful API endpoints
+- ✅ **Service Management**: Automated service spawning and monitoring
+- ✅ **State Tracking**: Service status tracking via config.json
+- ✅ **Health Monitoring**: Built-in health checks
+- ✅ **Validation**: Automated testing and validation
+
+## Enabled Services
+
+This router has the following services enabled: **Chat (Ollama)**
+
+## Quick Start
+
+**Start the router**:
+```bash
+./run.sh
+```
+
+The script will:
+1. Set up the Python environment
+2. Install dependencies
+3. Spawn required services (Ollama, Local RAG)
+4. Start the router server
+
+**Test the router**:
+```bash
+python validate.py
+```
+
+## Service Management
+
+### Service Spawning
+Services are automatically spawned by `spawn_services.py`:
+- **Ollama**: Local LLM service for chat
+- **Local RAG**: Document search and retrieval
+
+### State Tracking
+Service states are tracked in `config.json`:
+```json
+{
+  "services": {
+    "ollama": { "status": "running", "port": null },
+    "local_rag": { "status": "running", "port": 9000 }
+  },
+  "router": { "status": "running" }
+}
+```
+
+### Manual Service Control
+```bash
+# Spawn services only
+python spawn_services.py --project-name claude-sonnet-3.5 --config-path ~/.syftbox/config.json
+
+# Cleanup services
+python spawn_services.py --project-name claude-sonnet-3.5 --config-path ~/.syftbox/config.json --cleanup
+```
+
+## API Endpoints
+
+- `GET /health` - Health check
+- `POST /chat` - Chat completion (if enabled)
+- `POST /search` - Document search (if enabled)
+
+## Configuration
+
+Edit `.env` file to customize:
+- Ollama base URL
+- RAG service url
+- Service enablement
+
+## Dependency Management
+
+This project uses `pyproject.toml` with optional dependencies:
+
+### Base Dependencies (Always Installed)
+- FastAPI, Uvicorn, Pydantic, etc.
+
+### Optional Dependencies
+- **Chat Service**: `pip install -e .[chat]`
+- **Search Service**: `pip install -e .[search]`
+- **All Services**: `pip install -e .[all]`
+
+### Adding Services Later
+To enable additional services after setup:
+
+```bash
+# Enable chat service
+pip install -e .[chat]
+
+# Enable search service  
+pip install -e .[search]
+
+# Enable both services
+pip install -e .[all]
+```
+
+## Requirements
+
+- Python 3.9+
+- Ollama (for chat service)
+- syftbox (for local-rag service)
+- 4GB+ RAM (for local models)
+
+## Troubleshooting
+
+### Service Failures
+If services fail to start:
+1. Check `spawn_services.log` for detailed error messages
+2. Verify `config.json` for service status
+3. Ensure dependencies are installed (Ollama, syftbox)
+4. Check `.env` configuration
+
+### Manual Recovery
+```bash
+# Clean up failed state
+python spawn_services.py --project-name claude-sonnet-3.5 --config-path ~/.syftbox/config.json --cleanup
+
+# Retry spawning
+python spawn_services.py --project-name claude-sonnet-3.5 --config-path ~/.syftbox/config.json
+```
