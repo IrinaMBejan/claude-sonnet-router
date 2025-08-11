@@ -1,0 +1,11 @@
+2025-08-11 11:39:26.166 | INFO     | __main__:main:332 - Starting Syft LLM Router server...
+2025-08-11 11:39:26.171 | WARNING  | __main__:main:338 - Port 58782 is already in use. Using random port: 58782
+2025-08-11 11:39:26.381 | INFO     | syft_event.server2:register_rpc:181 - Register RPC: /health
+2025-08-11 11:39:26.382 | INFO     | syft_event.server2:register_rpc:181 - Register RPC: /chat
+2025-08-11 11:39:26.382 | INFO     | syft_event.server2:register_rpc:181 - Register RPC: /search
+2025-08-11 11:39:26.383 | INFO     | syft_event.server2:register_rpc:181 - Register RPC: /syft/openapi.json
+2025-08-11 11:39:26.384 | INFO     | syft_event.server2:publish_schema:136 - Published schema to /Users/flowstatic/SyftBox/datasites/irina@openmined.org/app_data/claude-sonnet-router/rpc/rpc.schema.json
+2025-08-11 11:39:26.387 | INFO     | syft_event.server2:set_debug_mode:98 - Debug mode disabled
+2025-08-11 11:39:26.389 | INFO     | chat_service:__init__:55 - Initialized accounting client: <syft_accounting_sdk.core.UserClient object at 0x1076e6c90>
+2025-08-11 11:39:26.389 | INFO     | server:lifespan:134 - Router initialized for project: claude-sonnet-3.5
+2025-08-11 11:39:31.757 | INFO     | server:lifespan:162 - Application shutting down

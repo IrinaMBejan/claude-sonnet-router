@@ -1,108 +1,97 @@
-line=1 time=2025-08-11T09:18:10Z [syftbox] Script PID: 204484
-line=2 time=2025-08-11T09:18:10Z [syftbox] Start time: Mon Aug 11 09:18:10 UTC 2025
-line=3 time=2025-08-11T09:18:10Z [syftbox] App ID: local.claude-sonnet-3-5
-line=4 time=2025-08-11T09:18:10Z [syftbox] App Dir: /home/azureuser/SyftBox/apps/claude-sonnet-3.5
-line=5 time=2025-08-11T09:18:10Z [syftbox] App Port: 45013
-line=6 time=2025-08-11T09:18:10Z [syftbox] Client Config Path: /home/azureuser/.syftbox/config.json
-line=7 time=2025-08-11T09:18:10Z [syftbox] PATH: /home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.local/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.local/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.bun/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.cargo/bin:/home/azureuser/.local/bin:/home/azureuser/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-line=8 time=2025-08-11T09:18:10Z ==========STARTING APP==========
-line=9 time=2025-08-11T09:18:10Z 🚀 Starting claude-sonnet-3.5 router...
-line=10 time=2025-08-11T09:18:10Z 🔧 Running basic setup...
-line=11 time=2025-08-11T09:18:10Z 📥 Installing/updating dependencies...
-line=12 time=2025-08-11T09:18:13Z Requirement already satisfied: pip in ./.venv/lib/python3.10/site-packages (25.2)
-line=13 time=2025-08-11T09:18:16Z Obtaining file:///home/azureuser/SyftBox/apps/claude-sonnet-3.5
-line=14 time=2025-08-11T09:18:16Z   Installing build dependencies: started
-line=15 time=2025-08-11T09:18:23Z   Installing build dependencies: finished with status 'done'
-line=16 time=2025-08-11T09:18:23Z   Checking if build backend supports build_editable: started
-line=17 time=2025-08-11T09:18:25Z   Checking if build backend supports build_editable: finished with status 'done'
-line=18 time=2025-08-11T09:18:25Z   Getting requirements to build editable: started
-line=19 time=2025-08-11T09:18:27Z   Getting requirements to build editable: finished with status 'done'
-line=20 time=2025-08-11T09:18:27Z   Preparing editable metadata (pyproject.toml): started
-line=21 time=2025-08-11T09:18:28Z   Preparing editable metadata (pyproject.toml): finished with status 'done'
-line=22 time=2025-08-11T09:18:28Z Requirement already satisfied: syft-core>=0.2.7 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (0.2.8)
-line=23 time=2025-08-11T09:18:28Z Requirement already satisfied: fastsyftbox>=0.1.19 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (0.1.19)
-line=24 time=2025-08-11T09:18:28Z Requirement already satisfied: pydantic>=2.0.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (2.11.4)
-line=25 time=2025-08-11T09:18:28Z Requirement already satisfied: loguru>=0.7.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (0.7.3)
-line=26 time=2025-08-11T09:18:28Z Requirement already satisfied: requests>=2.31.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (2.32.3)
-line=27 time=2025-08-11T09:18:28Z Requirement already satisfied: python-dotenv>=1.0.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (1.1.1)
-line=28 time=2025-08-11T09:18:28Z Requirement already satisfied: typing-extensions>=4.0.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (4.14.1)
-line=29 time=2025-08-11T09:18:28Z Requirement already satisfied: pytest>=7.0.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (8.4.1)
-line=30 time=2025-08-11T09:18:28Z Requirement already satisfied: pytest-asyncio>=0.21.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (1.1.0)
-line=31 time=2025-08-11T09:18:28Z Requirement already satisfied: httpx>=0.24.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (0.28.1)
-line=32 time=2025-08-11T09:18:28Z Requirement already satisfied: pydantic-settings>=2.10.1 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (2.10.1)
-line=33 time=2025-08-11T09:18:28Z Collecting syft-accounting-sdk@ git+https://github.com/OpenMined/accounting-sdk.git (from claude-sonnet-3.5==0.1.0)
-line=34 time=2025-08-11T09:18:28Z   Cloning https://github.com/OpenMined/accounting-sdk.git to /tmp/pip-install-bzie5abk/syft-accounting-sdk_79a2167dac404137b6a1ac1986fdeeaf
-line=35 time=2025-08-11T09:18:28Z   Running command git clone --filter=blob:none --quiet https://github.com/OpenMined/accounting-sdk.git /tmp/pip-install-bzie5abk/syft-accounting-sdk_79a2167dac404137b6a1ac1986fdeeaf
-line=36 time=2025-08-11T09:18:29Z   Resolved https://github.com/OpenMined/accounting-sdk.git to commit 46e1e8f0eec93693225e1e66ec1e79bb2d9b4f3b
-line=37 time=2025-08-11T09:18:29Z   Installing build dependencies: started
-line=38 time=2025-08-11T09:18:31Z   Installing build dependencies: finished with status 'done'
-line=39 time=2025-08-11T09:18:31Z   Getting requirements to build wheel: started
-line=40 time=2025-08-11T09:18:31Z   Getting requirements to build wheel: finished with status 'done'
-line=41 time=2025-08-11T09:18:31Z   Preparing metadata (pyproject.toml): started
-line=42 time=2025-08-11T09:18:31Z   Preparing metadata (pyproject.toml): finished with status 'done'
-line=43 time=2025-08-11T09:18:31Z Requirement already satisfied: aiohttp>=3.8.0 in ./.venv/lib/python3.10/site-packages (from claude-sonnet-3.5==0.1.0) (3.12.15)
-line=44 time=2025-08-11T09:18:31Z Requirement already satisfied: click==8.1.3 in ./.venv/lib/python3.10/site-packages (from syft-accounting-sdk@ git+https://github.com/OpenMined/accounting-sdk.git->claude-sonnet-3.5==0.1.0) (8.1.3)
-line=45 time=2025-08-11T09:18:31Z Requirement already satisfied: annotated-types>=0.6.0 in ./.venv/lib/python3.10/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (0.7.0)
-line=46 time=2025-08-11T09:18:31Z Requirement already satisfied: pydantic-core==2.33.2 in ./.venv/lib/python3.10/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (2.33.2)
-line=47 time=2025-08-11T09:18:31Z Requirement already satisfied: typing-inspection>=0.4.0 in ./.venv/lib/python3.10/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (0.4.1)
-line=48 time=2025-08-11T09:18:31Z Requirement already satisfied: charset-normalizer<4,>=2 in ./.venv/lib/python3.10/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (3.4.3)
-line=49 time=2025-08-11T09:18:31Z Requirement already satisfied: idna<4,>=2.5 in ./.venv/lib/python3.10/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (3.10)
-line=50 time=2025-08-11T09:18:31Z Requirement already satisfied: urllib3<3,>=1.21.1 in ./.venv/lib/python3.10/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (2.5.0)
-line=51 time=2025-08-11T09:18:31Z Requirement already satisfied: certifi>=2017.4.17 in ./.venv/lib/python3.10/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (2025.8.3)
-line=52 time=2025-08-11T09:18:31Z Requirement already satisfied: aiohappyeyeballs>=2.5.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (2.6.1)
-line=53 time=2025-08-11T09:18:31Z Requirement already satisfied: aiosignal>=1.4.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.4.0)
-line=54 time=2025-08-11T09:18:31Z Requirement already satisfied: async-timeout<6.0,>=4.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (5.0.1)
-line=55 time=2025-08-11T09:18:31Z Requirement already satisfied: attrs>=17.3.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (25.3.0)
-line=56 time=2025-08-11T09:18:31Z Requirement already satisfied: frozenlist>=1.1.1 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.7.0)
-line=57 time=2025-08-11T09:18:31Z Requirement already satisfied: multidict<7.0,>=4.5 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (6.6.3)
-line=58 time=2025-08-11T09:18:31Z Requirement already satisfied: propcache>=0.2.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (0.3.2)
-line=59 time=2025-08-11T09:18:31Z Requirement already satisfied: yarl<2.0,>=1.17.0 in ./.venv/lib/python3.10/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.20.1)
-line=60 time=2025-08-11T09:18:31Z Requirement already satisfied: fastapi>=0.115.12 in ./.venv/lib/python3.10/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.116.1)
-line=61 time=2025-08-11T09:18:31Z Requirement already satisfied: syft-event>=0.2.8 in ./.venv/lib/python3.10/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.2.8)
-line=62 time=2025-08-11T09:18:31Z Requirement already satisfied: typer>=0.4.0 in ./.venv/lib/python3.10/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.16.0)
-line=63 time=2025-08-11T09:18:31Z Requirement already satisfied: uvicorn>=0.34.2 in ./.venv/lib/python3.10/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.35.0)
-line=64 time=2025-08-11T09:18:32Z Requirement already satisfied: starlette<0.48.0,>=0.40.0 in ./.venv/lib/python3.10/site-packages (from fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.47.2)
-line=65 time=2025-08-11T09:18:32Z Requirement already satisfied: anyio<5,>=3.6.2 in ./.venv/lib/python3.10/site-packages (from starlette<0.48.0,>=0.40.0->fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (4.10.0)
-line=66 time=2025-08-11T09:18:32Z Requirement already satisfied: exceptiongroup>=1.0.2 in ./.venv/lib/python3.10/site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (1.3.0)
-line=67 time=2025-08-11T09:18:32Z Requirement already satisfied: sniffio>=1.1 in ./.venv/lib/python3.10/site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (1.3.1)
-line=68 time=2025-08-11T09:18:32Z Requirement already satisfied: httpcore==1.* in ./.venv/lib/python3.10/site-packages (from httpx>=0.24.0->claude-sonnet-3.5==0.1.0) (1.0.9)
-line=69 time=2025-08-11T09:18:32Z Requirement already satisfied: h11>=0.16 in ./.venv/lib/python3.10/site-packages (from httpcore==1.*->httpx>=0.24.0->claude-sonnet-3.5==0.1.0) (0.16.0)
-line=70 time=2025-08-11T09:18:32Z Requirement already satisfied: iniconfig>=1 in ./.venv/lib/python3.10/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (2.1.0)
-line=71 time=2025-08-11T09:18:32Z Requirement already satisfied: packaging>=20 in ./.venv/lib/python3.10/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (25.0)
-line=72 time=2025-08-11T09:18:32Z Requirement already satisfied: pluggy<2,>=1.5 in ./.venv/lib/python3.10/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (1.6.0)
-line=73 time=2025-08-11T09:18:32Z Requirement already satisfied: pygments>=2.7.2 in ./.venv/lib/python3.10/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (2.19.2)
-line=74 time=2025-08-11T09:18:32Z Requirement already satisfied: tomli>=1 in ./.venv/lib/python3.10/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (2.2.1)
-line=75 time=2025-08-11T09:18:32Z Requirement already satisfied: backports-asyncio-runner<2,>=1.1 in ./.venv/lib/python3.10/site-packages (from pytest-asyncio>=0.21.0->claude-sonnet-3.5==0.1.0) (1.2.0)
-line=76 time=2025-08-11T09:18:32Z Requirement already satisfied: pyyaml>=6.0.2 in ./.venv/lib/python3.10/site-packages (from syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (6.0.2)
-line=77 time=2025-08-11T09:18:32Z Requirement already satisfied: wcmatch==10.0 in ./.venv/lib/python3.10/site-packages (from syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (10.0)
-line=78 time=2025-08-11T09:18:32Z Requirement already satisfied: bracex>=2.1.1 in ./.venv/lib/python3.10/site-packages (from wcmatch==10.0->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.6)
-line=79 time=2025-08-11T09:18:32Z Requirement already satisfied: email-validator>=2.0.0 in ./.venv/lib/python3.10/site-packages (from pydantic[email]>=2.10.4->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.2.0)
-line=80 time=2025-08-11T09:18:32Z Requirement already satisfied: dnspython>=2.0.0 in ./.venv/lib/python3.10/site-packages (from email-validator>=2.0.0->pydantic[email]>=2.10.4->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.7.0)
-line=81 time=2025-08-11T09:18:32Z Requirement already satisfied: pathspec>=0.12.1 in ./.venv/lib/python3.10/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.12.1)
-line=82 time=2025-08-11T09:18:32Z Requirement already satisfied: syft-rpc>=0.2.8 in ./.venv/lib/python3.10/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.2.8)
-line=83 time=2025-08-11T09:18:32Z Requirement already satisfied: watchdog>=6.0.0 in ./.venv/lib/python3.10/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (6.0.0)
-line=84 time=2025-08-11T09:18:32Z Requirement already satisfied: shellingham>=1.3.0 in ./.venv/lib/python3.10/site-packages (from typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (1.5.4)
-line=85 time=2025-08-11T09:18:32Z Requirement already satisfied: rich>=10.11.0 in ./.venv/lib/python3.10/site-packages (from typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (14.1.0)
-line=86 time=2025-08-11T09:18:32Z Requirement already satisfied: markdown-it-py>=2.2.0 in ./.venv/lib/python3.10/site-packages (from rich>=10.11.0->typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (3.0.0)
-line=87 time=2025-08-11T09:18:32Z Requirement already satisfied: mdurl~=0.1 in ./.venv/lib/python3.10/site-packages (from markdown-it-py>=2.2.0->rich>=10.11.0->typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.1.2)
-line=88 time=2025-08-11T09:18:32Z Building wheels for collected packages: claude-sonnet-3.5
-line=89 time=2025-08-11T09:18:32Z   Building editable for claude-sonnet-3.5 (pyproject.toml): started
-line=90 time=2025-08-11T09:18:32Z   Building editable for claude-sonnet-3.5 (pyproject.toml): finished with status 'done'
-line=91 time=2025-08-11T09:18:32Z   Created wheel for claude-sonnet-3.5: filename=claude_sonnet_3_5-0.1.0-0.editable-py3-none-any.whl size=4295 sha256=bcbb0c388ea7587e72457f0b9598554baa0b1c1958f8a717b26068b55b4c5a0d
-line=92 time=2025-08-11T09:18:32Z   Stored in directory: /tmp/pip-ephem-wheel-cache-1zndszo9/wheels/f4/10/94/e8b3ba1b46c87ed1349aaa54da17186fab0772af3ee60863fb
-line=93 time=2025-08-11T09:18:32Z Successfully built claude-sonnet-3.5
-line=94 time=2025-08-11T09:18:32Z Installing collected packages: claude-sonnet-3.5
-line=95 time=2025-08-11T09:18:32Z   Attempting uninstall: claude-sonnet-3.5
-line=96 time=2025-08-11T09:18:32Z     Found existing installation: claude-sonnet-3.5 0.1.0
-line=97 time=2025-08-11T09:18:32Z     Uninstalling claude-sonnet-3.5-0.1.0:
-line=98 time=2025-08-11T09:18:32Z       Successfully uninstalled claude-sonnet-3.5-0.1.0
-line=99 time=2025-08-11T09:18:32Z Successfully installed claude-sonnet-3.5-0.1.0
-line=100 time=2025-08-11T09:18:32Z ✅ Basic setup complete!
-line=101 time=2025-08-11T09:18:32Z 🔄 Spawning services...
-line=102 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,258 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
-line=103 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,259 - __main__ - INFO - Chat enabled: True
-line=104 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,259 - __main__ - INFO - Search enabled: False
-line=105 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,259 - __main__ - INFO - 🔧 Setting up Claude service...
-line=106 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,313 - __main__ - ERROR - ❌ Custom chat service setup failed: CustomChatService.__init__() missing 1 required positional argument: 'config'
-line=107 time=2025-08-11T09:18:33Z 2025-08-11 09:18:33,314 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'
-line=108 time=2025-08-11T09:18:33Z ❌ Service spawning failed - router will not start
+line=1 time=2025-08-11T11:32:07+02:00 [syftbox] Script PID: 12535
+line=2 time=2025-08-11T11:32:07+02:00 [syftbox] Start time: Mon Aug 11 11:32:07 CEST 2025
+line=3 time=2025-08-11T11:32:07+02:00 [syftbox] App ID: local.claude-sonnet-router
+line=4 time=2025-08-11T11:32:07+02:00 [syftbox] App Dir: /Users/flowstatic/SyftBox/apps/claude-sonnet-router
+line=5 time=2025-08-11T11:32:07+02:00 [syftbox] App Port: 62475
+line=6 time=2025-08-11T11:32:07+02:00 [syftbox] Client Config Path: /Users/flowstatic/.syftbox/config.json
+line=7 time=2025-08-11T11:32:07+02:00 [syftbox] PATH: /Users/flowstatic/.bun/bin:/usr/local/opt/python@3.12/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/.local/bin:/Users/flowstatic/google-cloud-sdk/bin:/opt/homebrew/bin:/Library/Frameworks/Python.framework/Versions/3.13/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Users/flowstatic/.cargo/bin:/Users/flowstatic/.local/bin:/Applications/SyftBox.app/Contents/MacOS:/usr/local/lib/python3.9/site-packages/
+line=8 time=2025-08-11T11:32:07+02:00 ==========STARTING APP==========
+line=9 time=2025-08-11T11:32:07+02:00 🚀 Starting claude-sonnet-3.5 router...
+line=10 time=2025-08-11T11:32:07+02:00 🔧 Running basic setup...
+line=11 time=2025-08-11T11:32:07+02:00 📥 Installing/updating dependencies...
+line=12 time=2025-08-11T11:32:07+02:00 Requirement already satisfied: pip in /opt/homebrew/lib/python3.12/site-packages (25.2)
+line=13 time=2025-08-11T11:32:09+02:00 Obtaining file:///Users/flowstatic/SyftBox/apps/claude-sonnet-router
+line=14 time=2025-08-11T11:32:09+02:00   Installing build dependencies: started
+line=15 time=2025-08-11T11:32:10+02:00   Installing build dependencies: finished with status 'done'
+line=16 time=2025-08-11T11:32:10+02:00   Checking if build backend supports build_editable: started
+line=17 time=2025-08-11T11:32:10+02:00   Checking if build backend supports build_editable: finished with status 'done'
+line=18 time=2025-08-11T11:32:10+02:00   Getting requirements to build editable: started
+line=19 time=2025-08-11T11:32:10+02:00   Getting requirements to build editable: finished with status 'done'
+line=20 time=2025-08-11T11:32:10+02:00   Preparing editable metadata (pyproject.toml): started
+line=21 time=2025-08-11T11:32:11+02:00   Preparing editable metadata (pyproject.toml): finished with status 'done'
+line=22 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: syft-core>=0.2.7 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (0.2.8)
+line=23 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: fastsyftbox>=0.1.19 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (0.1.19)
+line=24 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: pydantic>=2.0.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (2.11.4)
+line=25 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: loguru>=0.7.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (0.7.3)
+line=26 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: requests>=2.31.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (2.32.3)
+line=27 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: python-dotenv>=1.0.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (1.0.1)
+line=28 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: typing-extensions>=4.0.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (4.13.2)
+line=29 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: pytest>=7.0.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (8.3.3)
+line=30 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: pytest-asyncio>=0.21.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (1.1.0)
+line=31 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: httpx>=0.24.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (0.28.1)
+line=32 time=2025-08-11T11:32:11+02:00 Requirement already satisfied: pydantic-settings>=2.10.1 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (2.10.1)
+line=33 time=2025-08-11T11:32:11+02:00 Collecting syft-accounting-sdk@ git+https://github.com/OpenMined/accounting-sdk.git (from claude-sonnet-3.5==0.1.0)
+line=34 time=2025-08-11T11:32:11+02:00   Cloning https://github.com/OpenMined/accounting-sdk.git to /private/var/folders/qr/1ch81rkj5hs0bj35gxlk68wm0000gn/T/pip-install-rmyr3ycf/syft-accounting-sdk_8e6a5b6a00c146268e0d3ca744165ec2
+line=35 time=2025-08-11T11:32:11+02:00   Running command git clone --filter=blob:none --quiet https://github.com/OpenMined/accounting-sdk.git /private/var/folders/qr/1ch81rkj5hs0bj35gxlk68wm0000gn/T/pip-install-rmyr3ycf/syft-accounting-sdk_8e6a5b6a00c146268e0d3ca744165ec2
+line=36 time=2025-08-11T11:32:12+02:00   Resolved https://github.com/OpenMined/accounting-sdk.git to commit 46e1e8f0eec93693225e1e66ec1e79bb2d9b4f3b
+line=37 time=2025-08-11T11:32:12+02:00   Installing build dependencies: started
+line=38 time=2025-08-11T11:32:13+02:00   Installing build dependencies: finished with status 'done'
+line=39 time=2025-08-11T11:32:13+02:00   Getting requirements to build wheel: started
+line=40 time=2025-08-11T11:32:13+02:00   Getting requirements to build wheel: finished with status 'done'
+line=41 time=2025-08-11T11:32:13+02:00   Preparing metadata (pyproject.toml): started
+line=42 time=2025-08-11T11:32:14+02:00   Preparing metadata (pyproject.toml): finished with status 'done'
+line=43 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: aiohttp>=3.8.0 in /opt/homebrew/lib/python3.12/site-packages (from claude-sonnet-3.5==0.1.0) (3.9.3)
+line=44 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: click==8.1.3 in /opt/homebrew/lib/python3.12/site-packages (from syft-accounting-sdk@ git+https://github.com/OpenMined/accounting-sdk.git->claude-sonnet-3.5==0.1.0) (8.1.3)
+line=45 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: annotated-types>=0.6.0 in /opt/homebrew/lib/python3.12/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (0.6.0)
+line=46 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: pydantic-core==2.33.2 in /opt/homebrew/lib/python3.12/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (2.33.2)
+line=47 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: typing-inspection>=0.4.0 in /opt/homebrew/lib/python3.12/site-packages (from pydantic>=2.0.0->claude-sonnet-3.5==0.1.0) (0.4.0)
+line=48 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: charset-normalizer<4,>=2 in /opt/homebrew/lib/python3.12/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (3.3.2)
+line=49 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: idna<4,>=2.5 in /opt/homebrew/lib/python3.12/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (3.7)
+line=50 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: urllib3<3,>=1.21.1 in /opt/homebrew/lib/python3.12/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (2.2.2)
+line=51 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: certifi>=2017.4.17 in /opt/homebrew/lib/python3.12/site-packages (from requests>=2.31.0->claude-sonnet-3.5==0.1.0) (2025.1.31)
+line=52 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: aiosignal>=1.1.2 in /opt/homebrew/lib/python3.12/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.3.1)
+line=53 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: attrs>=17.3.0 in /opt/homebrew/lib/python3.12/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (23.2.0)
+line=54 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: frozenlist>=1.1.1 in /opt/homebrew/lib/python3.12/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.4.1)
+line=55 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: multidict<7.0,>=4.5 in /opt/homebrew/lib/python3.12/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (6.0.5)
+line=56 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: yarl<2.0,>=1.0 in /opt/homebrew/lib/python3.12/site-packages (from aiohttp>=3.8.0->claude-sonnet-3.5==0.1.0) (1.9.4)
+line=57 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: fastapi>=0.115.12 in /opt/homebrew/lib/python3.12/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.116.1)
+line=58 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: syft-event>=0.2.8 in /opt/homebrew/lib/python3.12/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.2.8)
+line=59 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: typer>=0.4.0 in /opt/homebrew/lib/python3.12/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.15.2)
+line=60 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: uvicorn>=0.34.2 in /opt/homebrew/lib/python3.12/site-packages (from fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.35.0)
+line=61 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: starlette<0.48.0,>=0.40.0 in /opt/homebrew/lib/python3.12/site-packages (from fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.47.2)
+line=62 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: anyio<5,>=3.6.2 in /opt/homebrew/lib/python3.12/site-packages (from starlette<0.48.0,>=0.40.0->fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (4.4.0)
+line=63 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: sniffio>=1.1 in /opt/homebrew/lib/python3.12/site-packages (from anyio<5,>=3.6.2->starlette<0.48.0,>=0.40.0->fastapi>=0.115.12->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (1.3.1)
+line=64 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: httpcore==1.* in /opt/homebrew/lib/python3.12/site-packages (from httpx>=0.24.0->claude-sonnet-3.5==0.1.0) (1.0.5)
+line=65 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: h11<0.15,>=0.13 in /opt/homebrew/lib/python3.12/site-packages (from httpcore==1.*->httpx>=0.24.0->claude-sonnet-3.5==0.1.0) (0.14.0)
+line=66 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: iniconfig in /opt/homebrew/lib/python3.12/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (2.0.0)
+line=67 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: packaging in /opt/homebrew/lib/python3.12/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (25.0)
+line=68 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: pluggy<2,>=1.5 in /opt/homebrew/lib/python3.12/site-packages (from pytest>=7.0.0->claude-sonnet-3.5==0.1.0) (1.5.0)
+line=69 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: pyyaml>=6.0.2 in /opt/homebrew/lib/python3.12/site-packages (from syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (6.0.2)
+line=70 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: wcmatch==10.0 in /opt/homebrew/lib/python3.12/site-packages (from syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (10.0)
+line=71 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: bracex>=2.1.1 in /opt/homebrew/lib/python3.12/site-packages (from wcmatch==10.0->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.5.post1)
+line=72 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: email-validator>=2.0.0 in /opt/homebrew/lib/python3.12/site-packages (from pydantic[email]>=2.10.4->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.1.1)
+line=73 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: dnspython>=2.0.0 in /opt/homebrew/lib/python3.12/site-packages (from email-validator>=2.0.0->pydantic[email]>=2.10.4->syft-core>=0.2.7->claude-sonnet-3.5==0.1.0) (2.6.1)
+line=74 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: pathspec>=0.12.1 in /opt/homebrew/lib/python3.12/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.12.1)
+line=75 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: syft-rpc>=0.2.8 in /opt/homebrew/lib/python3.12/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.2.8)
+line=76 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: watchdog>=6.0.0 in /opt/homebrew/lib/python3.12/site-packages (from syft-event>=0.2.8->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (6.0.0)
+line=77 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: shellingham>=1.3.0 in /opt/homebrew/lib/python3.12/site-packages (from typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (1.5.4)
+line=78 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: rich>=10.11.0 in /opt/homebrew/lib/python3.12/site-packages (from typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (14.0.0)
+line=79 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: markdown-it-py>=2.2.0 in /opt/homebrew/lib/python3.12/site-packages (from rich>=10.11.0->typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (2.2.0)
+line=80 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: pygments<3.0.0,>=2.13.0 in /opt/homebrew/lib/python3.12/site-packages (from rich>=10.11.0->typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (2.19.2)
+line=81 time=2025-08-11T11:32:14+02:00 Requirement already satisfied: mdurl~=0.1 in /opt/homebrew/lib/python3.12/site-packages (from markdown-it-py>=2.2.0->rich>=10.11.0->typer>=0.4.0->fastsyftbox>=0.1.19->claude-sonnet-3.5==0.1.0) (0.1.2)
+line=82 time=2025-08-11T11:32:14+02:00 Building wheels for collected packages: claude-sonnet-3.5
+line=83 time=2025-08-11T11:32:14+02:00   Building editable for claude-sonnet-3.5 (pyproject.toml): started
+line=84 time=2025-08-11T11:32:14+02:00   Building editable for claude-sonnet-3.5 (pyproject.toml): finished with status 'done'
+line=85 time=2025-08-11T11:32:14+02:00   Created wheel for claude-sonnet-3.5: filename=claude_sonnet_3.5-0.1.0-0.editable-py3-none-any.whl size=4298 sha256=377e42b72dc284bbb33dc77220f9d07ccc4c1254c86759f3918a1796fed6dd8a
+line=86 time=2025-08-11T11:32:14+02:00   Stored in directory: /private/var/folders/qr/1ch81rkj5hs0bj35gxlk68wm0000gn/T/pip-ephem-wheel-cache-hsbmootm/wheels/a7/db/60/a4f7e1d3e3bf731de3a859fb8585cd2806403be49cb33d653a
+line=87 time=2025-08-11T11:32:14+02:00 Successfully built claude-sonnet-3.5
+line=88 time=2025-08-11T11:32:15+02:00 Installing collected packages: claude-sonnet-3.5
+line=89 time=2025-08-11T11:32:15+02:00   Attempting uninstall: claude-sonnet-3.5
+line=90 time=2025-08-11T11:32:15+02:00     Found existing installation: claude-sonnet-3.5 0.1.0
+line=91 time=2025-08-11T11:32:15+02:00     Uninstalling claude-sonnet-3.5-0.1.0:
+line=92 time=2025-08-11T11:32:20+02:00       Successfully uninstalled claude-sonnet-3.5-0.1.0
+line=93 time=2025-08-11T11:32:20+02:00 Successfully installed claude-sonnet-3.5-0.1.0
+line=94 time=2025-08-11T11:32:20+02:00 ✅ Basic setup complete!
+line=95 time=2025-08-11T11:32:20+02:00 🔄 Spawning services...
+line=96 time=2025-08-11T11:32:21+02:00 2025-08-11 11:32:21,130 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+line=97 time=2025-08-11T11:32:21+02:00 ❌ Service spawning failed - router will not start

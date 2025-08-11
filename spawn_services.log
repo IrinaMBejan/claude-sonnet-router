@@ -29,3 +29,33 @@ openrouter_api_key
 2025-08-11 09:18:33,259 - __main__ - INFO - 🔧 Setting up Claude service...
 2025-08-11 09:18:33,313 - __main__ - ERROR - ❌ Custom chat service setup failed: CustomChatService.__init__() missing 1 required positional argument: 'config'
 2025-08-11 09:18:33,314 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'
+2025-08-11 11:30:57,683 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:32:21,130 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:32:51,142 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:33:31,786 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:33:54,010 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:34:28,710 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'
+2025-08-11 11:34:45,813 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/../../azureuser/.syftbox/config.json' - Config file not found at '/../../azureuser/.syftbox/config.json'
+2025-08-11 11:35:06,882 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/../../azureuser/.syftbox/config.json' - Config file not found at '/../../azureuser/.syftbox/config.json'
+2025-08-11 11:35:21,034 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/../../azureuser/.syftbox/config.json' - Config file not found at '/../../azureuser/.syftbox/config.json'
+2025-08-11 11:35:56,630 - __main__ - ERROR - 💥 Service spawning error: 1 validation error for RouterEnvSettings
+syftbox_config_path
+  Value error, Syftbox config path /Users/flowstatic/SyftBox/.syftbox/config.json does not exist [type=value_error, input_value='../../.syftbox/config.json', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-08-11 11:37:19,286 - __main__ - ERROR - 💥 Service spawning error: 1 validation error for RouterEnvSettings
+syftbox_config_path
+  Value error, Syftbox config path /Users/flowstatic/SyftBox/.syftbox/config.json does not exist [type=value_error, input_value='../../.syftbox/config.json', input_type=str]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error
+2025-08-11 11:37:53,787 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 11:37:53,788 - __main__ - INFO - Chat enabled: True
+2025-08-11 11:37:53,788 - __main__ - INFO - Search enabled: False
+2025-08-11 11:37:53,788 - __main__ - INFO - 🔧 Setting up Claude service...
+2025-08-11 11:37:53,817 - __main__ - ERROR - ❌ Custom chat service setup failed: CustomChatService.__init__() missing 1 required positional argument: 'config'
+2025-08-11 11:37:53,818 - __main__ - ERROR - 💥 Service spawning error: 'CustomServiceManager' object has no attribute 'state'
+2025-08-11 11:39:24,231 - __main__ - INFO - Service Manager initialized for claude-sonnet-3.5
+2025-08-11 11:39:24,231 - __main__ - INFO - Chat enabled: True
+2025-08-11 11:39:24,231 - __main__ - INFO - Search enabled: False
+2025-08-11 11:39:24,231 - __main__ - INFO - 🔧 Setting up Claude service...
+2025-08-11 11:39:24,259 - __main__ - INFO - 🧪 Testing chat service with a simple request...
+2025-08-11 11:39:25,414 - __main__ - INFO - ✅ Chat service test successful
+2025-08-11 11:39:25,414 - __main__ - INFO - 🎉 All services ready - router can start

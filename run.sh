@@ -20,8 +20,8 @@ source .venv/bin/activate
 
 # Install/update dependencies with extras: chat
 echo "📥 Installing/updating dependencies..."
-pip install --upgrade pip
-pip install -e .[chat]
+pip install --upgrade pip --break-system-packages
+pip install -e .[chat] --break-system-packages
 
 # Copy environment file if missing
 if [ ! -f ".env" ]; then

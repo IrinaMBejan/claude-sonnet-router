@@ -1,0 +1,726 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "claude-sonnet-router",
+    "description": "This is a SyftBox application with RPC endpoints.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "syftbox"
+        ],
+        "summary": "Health check",
+        "description": "Health check",
+        "operationId": "health_check_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/chat": {
+      "post": {
+        "tags": [
+          "syftbox"
+        ],
+        "summary": "Chat with the router",
+        "description": "Chat with the router",
+        "operationId": "chat_completion_chat_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ChatRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ChatResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/search": {
+      "post": {
+        "tags": [
+          "syftbox"
+        ],
+        "summary": "Search documents",
+        "description": "Search documents",
+        "operationId": "search_documents_search_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SearchResponse"
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ChatRequest": {
+        "properties": {
+          "userEmail": {
+            "type": "string",
+            "format": "email",
+            "title": "Useremail",
+            "description": "The user email"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "messages": {
+            "items": {
+              "$ref": "#/components/schemas/Message"
+            },
+            "type": "array",
+            "title": "Messages"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/GenerationOptions"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "transactionToken": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Transactiontoken",
+            "description": "Transaction token"
+          }
+        },
+        "type": "object",
+        "required": [
+          "userEmail",
+          "model",
+          "messages"
+        ],
+        "title": "ChatRequest",
+        "description": "Parameters for chat completion generation."
+      },
+      "ChatResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id"
+          },
+          "model": {
+            "type": "string",
+            "title": "Model"
+          },
+          "message": {
+            "$ref": "#/components/schemas/Message"
+          },
+          "finishReason": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/FinishReason"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "usage": {
+            "$ref": "#/components/schemas/ChatUsage"
+          },
+          "providerInfo": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Providerinfo"
+          },
+          "logprobs": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/LogProbs"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "cost": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cost"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "model",
+          "message",
+          "usage"
+        ],
+        "title": "ChatResponse",
+        "description": "Response from a chat completion request."
+      },
+      "ChatUsage": {
+        "properties": {
+          "promptTokens": {
+            "type": "integer",
+            "title": "Prompttokens"
+          },
+          "completionTokens": {
+            "type": "integer",
+            "title": "Completiontokens"
+          },
+          "totalTokens": {
+            "type": "integer",
+            "title": "Totaltokens"
+          }
+        },
+        "type": "object",
+        "required": [
+          "promptTokens",
+          "completionTokens",
+          "totalTokens"
+        ],
+        "title": "ChatUsage",
+        "description": "Token usage information for the request and response."
+      },
+      "DocumentResult": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "title": "Id",
+            "description": "Identifier for the document"
+          },
+          "score": {
+            "type": "number",
+            "title": "Score",
+            "description": "Similarity score between query and document"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content",
+            "description": "Text content of the document or chunk"
+          },
+          "metadata": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Metadata",
+            "description": "Metadata associated with the document"
+          },
+          "embedding": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "number"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Embedding",
+            "description": "Vector embedding of the document (if requested)"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "score",
+          "content"
+        ],
+        "title": "DocumentResult",
+        "description": "A document searched from the index"
+      },
+      "FinishReason": {
+        "type": "string",
+        "enum": [
+          "stop",
+          "length",
+          "content_filter"
+        ],
+        "title": "FinishReason",
+        "description": "Reason why the generation stopped."
+      },
+      "GenerationOptions": {
+        "properties": {
+          "maxTokens": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Maxtokens"
+          },
+          "temperature": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 2.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Temperature"
+          },
+          "topP": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Topp"
+          },
+          "stopSequences": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Stopsequences"
+          },
+          "logprobs": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Logprobs"
+          },
+          "topLogprobs": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Toplogprobs"
+          },
+          "extensions": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extensions",
+            "description": "Container for specification extensions"
+          }
+        },
+        "type": "object",
+        "title": "GenerationOptions",
+        "description": "Options that control the text generation process."
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HealthResponse": {
+        "properties": {
+          "status": {
+            "type": "string",
+            "title": "Status"
+          },
+          "project_name": {
+            "type": "string",
+            "title": "Project Name"
+          },
+          "services": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Services"
+          }
+        },
+        "type": "object",
+        "required": [
+          "status",
+          "project_name",
+          "services"
+        ],
+        "title": "HealthResponse",
+        "description": "Health check response."
+      },
+      "LogProbs": {
+        "properties": {
+          "tokenLogprobs": {
+            "additionalProperties": {
+              "type": "number"
+            },
+            "type": "object",
+            "title": "Tokenlogprobs",
+            "description": "Map of tokens to their log probabilities"
+          }
+        },
+        "type": "object",
+        "required": [
+          "tokenLogprobs"
+        ],
+        "title": "LogProbs",
+        "description": "Log probabilities for generated tokens."
+      },
+      "Message": {
+        "properties": {
+          "role": {
+            "$ref": "#/components/schemas/Role"
+          },
+          "content": {
+            "type": "string",
+            "title": "Content"
+          },
+          "name": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Name"
+          }
+        },
+        "type": "object",
+        "required": [
+          "role",
+          "content"
+        ],
+        "title": "Message",
+        "description": "A message in a conversation between user and assistant."
+      },
+      "Role": {
+        "type": "string",
+        "enum": [
+          "system",
+          "user",
+          "assistant"
+        ],
+        "title": "Role",
+        "description": "Defines the role of the message author in a conversation."
+      },
+      "SearchOptions": {
+        "properties": {
+          "limit": {
+            "anyOf": [
+              {
+                "type": "integer"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Limit",
+            "description": "Maximum number of documents to search",
+            "default": 3
+          },
+          "similarityThreshold": {
+            "anyOf": [
+              {
+                "type": "number",
+                "maximum": 1.0,
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Similaritythreshold",
+            "description": "Minimum similarity score for searched documents"
+          },
+          "includeMetadata": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Includemetadata",
+            "description": "Whether to include document metadata in results"
+          },
+          "includeEmbeddings": {
+            "anyOf": [
+              {
+                "type": "boolean"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Includeembeddings",
+            "description": "Whether to include vector embeddings in results"
+          },
+          "extensions": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Extensions",
+            "description": "Container for searcher-specific extensions"
+          }
+        },
+        "type": "object",
+        "title": "SearchOptions",
+        "description": "Options for controlling document retrieval process"
+      },
+      "SearchRequest": {
+        "properties": {
+          "userEmail": {
+            "type": "string",
+            "format": "email",
+            "title": "Useremail",
+            "description": "The user email"
+          },
+          "query": {
+            "type": "string",
+            "title": "Query",
+            "description": "The search query"
+          },
+          "options": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/SearchOptions"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "description": "Additional parameters for the search",
+            "default": {
+              "limit": 3
+            }
+          },
+          "transactionToken": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Transactiontoken",
+            "description": "Transaction token"
+          }
+        },
+        "type": "object",
+        "required": [
+          "userEmail",
+          "query"
+        ],
+        "title": "SearchRequest",
+        "description": "Parameters for document search request."
+      },
+      "SearchResponse": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "format": "uuid",
+            "title": "Id",
+            "description": "Unique identifier for this search operation"
+          },
+          "query": {
+            "type": "string",
+            "title": "Query",
+            "description": "The original search query"
+          },
+          "results": {
+            "items": {
+              "$ref": "#/components/schemas/DocumentResult"
+            },
+            "type": "array",
+            "title": "Results",
+            "description": "Search results matching the query"
+          },
+          "providerInfo": {
+            "anyOf": [
+              {
+                "additionalProperties": true,
+                "type": "object"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Providerinfo",
+            "description": "Router-specific information"
+          },
+          "cost": {
+            "anyOf": [
+              {
+                "type": "number"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Cost"
+          }
+        },
+        "type": "object",
+        "required": [
+          "id",
+          "query",
+          "results"
+        ],
+        "title": "SearchResponse",
+        "description": "The result of the document search operation"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

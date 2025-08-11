@@ -99,8 +99,8 @@ class CustomServiceManager:
             if not self.custom_chat_api_key:
                 raise ValueError("OPENROUTER_API_KEY is required but not found in environment variables")
             
-            # Initialize the chat service with the API key
-            self.chat_service = CustomChatService(api_key=self.custom_chat_api_key)
+            # Initialize the chat service with config and API key
+            self.chat_service = CustomChatService(config=self.config, api_key=self.custom_chat_api_key)
             
             # Test the chat service with a simple request
             from schema import Message, Role, GenerationOptions
@@ -112,12 +112,13 @@ class CustomServiceManager:
             test_response = self.chat_service.generate_chat(
                 model="claude-3-haiku",
                 messages=test_messages,
+                user_email="test@example.com",
                 options=GenerationOptions(max_tokens=50)
             )
             
             if test_response and test_response.message.content:
                 logger.info("✅ Chat service test successful")
-                self.state.update_service_state(
+                self.config.state.update_service_state(
                     "chat", 
                     status=RunStatus.RUNNING,
                     url=self.custom_chat_url  # This would be set if you have a URL
@@ -128,7 +129,7 @@ class CustomServiceManager:
 
         except Exception as e:
             logger.error(f"❌ Custom chat service setup failed: {e}")
-            self.state.update_service_state(
+            self.config.state.update_service_state(
                 "chat", status=RunStatus.FAILED, error=str(e)
             )
             return False
@@ -152,14 +153,14 @@ class CustomServiceManager:
             )
 
             # For now, mark as failed so router doesn't start
-            self.state.update_service_state(
+            self.config.state.update_service_state(
                 "search", status=RunStatus.FAILED, error="Not implemented"
             )
             return False
 
         except Exception as e:
             logger.error(f"❌ Custom search service setup failed: {e}")
-            self.state.update_service_state(
+            self.config.state.update_service_state(
                 "search", status=RunStatus.FAILED, error=str(e)
             )
             return False
