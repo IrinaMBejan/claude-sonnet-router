@@ -1,10 +1,10 @@
 #!/bin/bash
 set -e
 
-# claude-sonnet-3.5 Router Startup Script
+# deepseek-v3 Router Startup Script
 # Generated automatically - simplified version with service spawning
 
-echo "🚀 Starting claude-sonnet-3.5 router..."
+echo "🚀 Starting deepseek-v3 router..."
 
 # Basic environment setup
 echo "🔧 Running basic setup..."
@@ -33,12 +33,12 @@ echo "✅ Basic setup complete!"
 
 # Spawn services using Python script
 echo "🔄 Spawning services..."
-if python spawn_services.py --project-name claude-sonnet-3.5 --config-path /home/azureuser/.syftbox/config.json; then
+if python spawn_services.py --project-name deepseek-v3 --config-path /home/azureuser/.syftbox/config.json; then
     echo "✅ Services spawned successfully"
     
     # Start the router
     echo "🎯 Starting router server..."
-    python server.py --project-name claude-sonnet-3.5
+    python server.py --project-name deepseek-v3
 else
     echo "❌ Service spawning failed - router will not start"
     exit 1

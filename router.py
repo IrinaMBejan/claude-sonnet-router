@@ -1,4 +1,4 @@
-"""Router implementation for claude-sonnet-3.5."""
+"""Router implementation for deepseek-v3"""
 
 from typing import List, Optional
 from uuid import UUID

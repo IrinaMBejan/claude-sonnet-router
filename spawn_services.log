@@ -59,3 +59,4 @@ syftbox_config_path
 2025-08-11 11:39:24,259 - __main__ - INFO - 🧪 Testing chat service with a simple request...
 2025-08-11 11:39:25,414 - __main__ - INFO - ✅ Chat service test successful
 2025-08-11 11:39:25,414 - __main__ - INFO - 🎉 All services ready - router can start
+2025-08-11 11:48:58,567 - __main__ - ERROR - 💥 Service spawning error: Failed to load config from '/home/azureuser/.syftbox/config.json' - Config file not found at '/home/azureuser/.syftbox/config.json'

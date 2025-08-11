@@ -1,4 +1,4 @@
-"""Chat service implementation using Claude."""
+"""Chat service implementation using DeepSeek V3."""
 
 import os
 from typing import List, Optional
@@ -23,11 +23,11 @@ from syft_accounting_sdk import UserClient
 
 
 class CustomChatService(ChatService):
-    """Claude-sonnet-3.5 service implementation."""
+    """DeepSeek service implementation using OpenRouter."""
 
 
     def __init__(self, config: RouterConfig, api_key: Optional[str] = None):
-        """Initialize Ollama chat service."""
+        """Initialize DeepSeek chat service via OpenRouter."""
 
         super().__init__(config)
         self.api_key = api_key or os.getenv("OPENROUTER_API_KEY")
@@ -37,13 +37,7 @@ class CustomChatService(ChatService):
             
         self.base_url = "https://openrouter.ai/api/v1"
         self.allowed_models = [
-            "claude-3-opus", 
-            "claude-3-sonnet", 
-            "claude-3-haiku", 
-            "claude",
-            "anthropic/claude-3-opus",
-            "anthropic/claude-3-sonnet", 
-            "anthropic/claude-3-haiku"
+            "deepseek-chat",
         ]
         self.headers = {
             "Content-Type": "application/json",
@@ -74,17 +68,16 @@ class CustomChatService(ChatService):
         #     raise ValueError(
         #         f"Model '{model}' is not allowed. Allowed models: {allowed_models_str}"
         #     )
-        # Default to claude-3-sonnet
+        # Default to deepseek-chat
         if model not in self.allowed_models:
-            logger.warning(f"Model '{model}' is not allowed, defaulting to 'claude-3-sonnet'.")
-            model = "claude-3-sonnet"
+            logger.warning(f"Model '{model}' is not allowed, defaulting to 'deepseek-chat'.")
+            model = "deepseek-chat"
 
         # Map short names to full OpenRouter model names
         model_mapping = {
-            "claude": "anthropic/claude-3-sonnet",
-            "claude-3-opus": "anthropic/claude-3-opus",
-            "claude-3-sonnet": "anthropic/claude-3-sonnet",
-            "claude-3-haiku": "anthropic/claude-3-haiku"
+            "deepseek-chat": "deepseek/deepseek-chat",
+            "deepseek-coder": "deepseek/deepseek-coder",
+            "deepseek-v3": "deepseek/deepseek-v3"
         }
 
         return model_mapping.get(model, model)
@@ -120,7 +113,7 @@ class CustomChatService(ChatService):
         transaction_token: Optional[str] = None,
         options: Optional[GenerationOptions] = None,
     ) -> ChatResponse:
-        """Generate a chat response using Ollama."""
+        """Generate a chat response using DeepSeek via OpenRouter."""
         try:
             full_model_name = self._validate_model(model)
 
@@ -174,7 +167,7 @@ class CustomChatService(ChatService):
                     app_name=self.app_name,
                     app_ep_path="/chat",
                 ) as payment_txn:
-                    # Make request to Ollama
+                    # Make request to DeepSeek via OpenRouter
                     content = self.__make_chat_request(payload)
 
                     # If the response is not empty, confirm the transaction
@@ -189,9 +182,9 @@ class CustomChatService(ChatService):
                 )
 
             else:
-                # If pricing is zero, then we make a request to Ollama without creating a transaction
+                # If pricing is zero, then we make a request to DeepSeek without creating a transaction
                 # We don't need to create a transaction because the service is free
-                # Make request to Ollama
+                # Make request to DeepSeek via OpenRouter
                 content = self.__make_chat_request(payload)
 
             
@@ -229,12 +222,12 @@ class CustomChatService(ChatService):
                 model=model,
                 message=generated_message,
                 finish_reason=finish_reason,                usage=usage,
-                provider_info={"provider": "ollama", "model": model},
+                provider_info={"provider": "deepseek", "model": model},
                 cost=query_cost,
             )
 
         except requests.exceptions.RequestException as e:
-            logger.error(f"Claude API request failed: {e}")
+            logger.error(f"DeepSeek API request failed: {e}")
             raise e
         except Exception as e:
             logger.error(f"Unexpected error in chat generation: {e}")

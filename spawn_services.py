@@ -88,8 +88,8 @@ class CustomServiceManager:
             )
 
     def spawn_custom_chat(self) -> bool:
-        """Spawn and verify Claude service."""
-        logger.info("🔧 Setting up Claude service...")
+        """Spawn and verify DeepSeek V3 service."""
+        logger.info("🔧 Setting up DeepSeek V3 service...")
 
         try:
              # Import and initialize the chat service
@@ -110,7 +110,7 @@ class CustomServiceManager:
             
             logger.info("🧪 Testing chat service with a simple request...")
             test_response = self.chat_service.generate_chat(
-                model="claude-3-haiku",
+                model="deepseek-v3",
                 messages=test_messages,
                 user_email="test@example.com",
                 options=GenerationOptions(max_tokens=50)

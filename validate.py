@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-claude-sonnet-3.5 Router Validation Script
+deepseek-v3 Router Validation Script
 Tests the generated router to ensure it works correctly.
 """
 
